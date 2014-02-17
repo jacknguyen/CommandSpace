@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Command Space</title>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	
+	<body>
+		<p class="script"><%= flash[:error] %></p>
+		<div class="container">
+
+		<%= yield %>
+			
+		</div>
+
+	</body>
+</html>

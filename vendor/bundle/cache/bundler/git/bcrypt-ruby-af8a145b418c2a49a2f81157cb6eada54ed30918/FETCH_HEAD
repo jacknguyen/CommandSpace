@@ -1,0 +1,18 @@
+ba77ac1e2d88b72126fa0495b28fecd821ca118c		branch 'ctype-standardization' of git://github.com/codahale/bcrypt-ruby
+df09e4c73f2f3d9a134b2abf536ca5f159f33075		branch 'master' of git://github.com/codahale/bcrypt-ruby
+cb8376085b54bc8c64f1099a4f576bec09c7fa6c		branch 'stable-1.0' of git://github.com/codahale/bcrypt-ruby
+3c059f66f311a5d6620e8aad1d1d25a9b22c8f56		branch 'tags/rel_1_0_0' of git://github.com/codahale/bcrypt-ruby
+135162fde133854ccb0b5f50419f3d746cca61b9		branch 'tags/rel_2_0_0' of git://github.com/codahale/bcrypt-ruby
+7cc4c8ae45c682961adfc8b7670e65fbcce037e7		branch 'tags/rel_2_0_1' of git://github.com/codahale/bcrypt-ruby
+4736993469f596754b1aa8b1f469d7a2636c1e76		branch 'tags/rel_2_0_2' of git://github.com/codahale/bcrypt-ruby
+7a7fcf396f927ed61a60647a9a55aafa7c8e6b6a		branch 'win32_ruby_1_9_only' of git://github.com/codahale/bcrypt-ruby
+769920d5c5f762c4dde6b6623110160a7ced463f		branch 'win_fat_binary_build' of git://github.com/codahale/bcrypt-ruby
+84745b1564ef29d308a58a96429cd74ab26ddcbc	not-for-merge	tag 'rel_2_0_3' of git://github.com/codahale/bcrypt-ruby
+18178defdd85fcde985e0f010666d8aa54819a48	not-for-merge	tag 'rel_2_0_4' of git://github.com/codahale/bcrypt-ruby
+3137ad6d58e3541613b4e1e1cdd7cd70c5d9f2b6	not-for-merge	tag 'rel_2_0_5' of git://github.com/codahale/bcrypt-ruby
+17b18eab80d82ec39c36bfadc461b2e092342002	not-for-merge	tag 'rel_2_1_0' of git://github.com/codahale/bcrypt-ruby
+525b5999142d3d8c731fd7524eb07780dcd03720	not-for-merge	tag 'rel_2_1_1' of git://github.com/codahale/bcrypt-ruby
+c85bc646b8251f3b4f7365d63752a813c2733409	not-for-merge	tag 'rel_2_1_2' of git://github.com/codahale/bcrypt-ruby
+526a4bba7a61cc54ca488fa4816a53f5208e82df	not-for-merge	tag 'v3.0.0' of git://github.com/codahale/bcrypt-ruby
+efbf09475899c3ad11ab9ab4757984289d4504ce	not-for-merge	tag 'v3.0.1' of git://github.com/codahale/bcrypt-ruby
+7a7fcf396f927ed61a60647a9a55aafa7c8e6b6a	not-for-merge	tag 'v3.1.1' of git://github.com/codahale/bcrypt-ruby

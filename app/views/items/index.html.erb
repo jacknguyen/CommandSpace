@@ -1,0 +1,46 @@
+<h1><%= current_user.username %>'s list of crap</h1>
+
+<div class="row">
+	<div class="col-md-4"></div>
+	<div class="col-md-6">
+		<%= render 'new' %>
+	</div>
+	<div class="col-md-2"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-3"></div>
+	
+	<div class="col-md-6">
+		<br />
+		
+		<table class="table table-hover">
+			<tr>
+				<th>Image</th>
+				<th>Name</th>	
+				<th>Price</th>
+				<th></th>	
+				<th></th>	
+			</tr>
+			<% @items.each do |i| %>
+				<tr>
+					<td>Image Placeholder</td>
+					<td><%= i.item_name %></td>
+					<td><%= number_to_currency(i.item_price) %></td>
+					<td>						
+						<%= button_to item_path(i.id), {action: "edit", method: :get, class: "btn btn-default"} do %>
+							<span class="glyphicon glyphicon-pencil"></span>
+						<% end %>
+					</td>
+					<td>
+						<%= button_to item_path(i.id), {action: "destroy", method: :delete, class: "btn btn-default", confirm: "Are you sure?"} do %>
+							<span class="glyphicon glyphicon-minus"></span>
+						<% end %>
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+
+	<div class="col-md-3"></div>
+</div>

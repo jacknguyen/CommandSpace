@@ -1,0 +1,16 @@
+<div class="container">
+	<h1>Log in and give some props!</h1>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<%= form_for @user, {url: auths_path, method: 'post'} do |user| %>
+				<%= user.text_field :username, :placeholder => "Enter your username", class: "form-control" %><br>
+				<%= user.password_field :password, :placeholder => "Enter password", class: "form-control" %><br>
+				<%= user.submit "Log in!", class: "btn btn-success" %>
+			<% end %>
+
+			<%= link_to "Sign up!", new_user_path, class: "btn btn-primary" %>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
