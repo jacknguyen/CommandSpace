@@ -9,7 +9,7 @@ CommandSpace::Application.routes.draw do
 
   delete "auths" => "auths#destroy"
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'auths#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

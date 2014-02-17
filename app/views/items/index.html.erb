@@ -1,9 +1,11 @@
+<%= button_to "Log Out", auths_path, method: :delete, class: "btn btn-danger" %>
+
 <h1><%= current_user.username %>'s list of crap</h1>
 
 <div class="row">
 	<div class="col-md-4"></div>
 	<div class="col-md-6">
-		<%= render 'new' %>
+		<%= render 'form' %>
 	</div>
 	<div class="col-md-2"></div>
 </div>
@@ -13,7 +15,7 @@
 	
 	<div class="col-md-6">
 		<br />
-		
+
 		<table class="table table-hover">
 			<tr>
 				<th>Image</th>
@@ -28,7 +30,7 @@
 					<td><%= i.item_name %></td>
 					<td><%= number_to_currency(i.item_price) %></td>
 					<td>						
-						<%= button_to item_path(i.id), {action: "edit", method: :get, class: "btn btn-default"} do %>
+						<%= button_to edit_item_path(i.id), {action: "edit", method: :get, class: "btn btn-default"} do %>
 							<span class="glyphicon glyphicon-pencil"></span>
 						<% end %>
 					</td>
@@ -40,6 +42,7 @@
 				</tr>
 			<% end %>
 		</table>
+
 	</div>
 
 	<div class="col-md-3"></div>

@@ -14,9 +14,9 @@ class AuthsController < ApplicationController
 			user = User.find_by(username: params[:user][:username])
 			if user && user.authenticate?(params[:user][:password])
 				session[:user_id] = user.id 
-				redirect_to props_path
+				redirect_to items_path
 			else
-				flash[:error] = "You are not logged in! You can't see the props. I bet you're sad."
+				flash[:error] = "Incorrect Password. Try Again"
 				redirect_to new_auth_path
 			end
 		end

@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all.sort_by(&:created_at).reverse
-    @newitem = Item.new
+    @item = Item.new
     
   end
 
@@ -27,7 +27,7 @@ class ItemsController < ApplicationController
   def update
     @item = Item.find(params[:id])
     if @item.update_attributes(params.require(:item).permit(:item_name, :item_price))
-      redirect_to @item
+      redirect_to items_path
     else
       flash[:error] = "List not udpated"
       render 'edit'
